@@ -1,0 +1,172 @@
+:root {
+    --bg: #030303;
+    --fg: #fcfcfc;
+    --accent: #00ff9d;
+    --accent-dim: rgba(0, 255, 157, 0.15);
+    --secondary: #a1a1aa;
+    --glass: rgba(255, 255, 255, 0.03);
+    --glass-border: rgba(255, 255, 255, 0.08);
+    --font-main: 'Inter', system-ui, -apple-system, sans-serif;
+    --font-mono: 'JetBrains Mono', monospace;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    -webkit-font-smoothing: antialiased;
+}
+
+body {
+    background-color: #000000;
+    color: var(--fg);
+    font-family: var(--font-main);
+    overflow: hidden;
+}
+
+/* Premium Background Layer - Removed gradients and images per request */
+.bg-layer {
+    display: none;
+}
+
+.scroll-container {
+    height: 100vh;
+    overflow-y: scroll;
+    scroll-snap-type: y mandatory;
+    scrollbar-width: none;
+}
+
+.scroll-container::-webkit-scrollbar { display: none; }
+
+.slide {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 4rem;
+    scroll-snap-align: start;
+    scroll-snap-stop: always;
+}
+
+.content {
+    max-width: 1100px;
+    width: 100%;
+}
+
+/* Typography Overhaul */
+h1 {
+    font-size: clamp(4rem, 12vw, 8.5rem);
+    font-weight: 800;
+    letter-spacing: -0.05em;
+    line-height: 0.85;
+    margin-bottom: 2rem;
+    background: linear-gradient(180deg, #fff 0%, #888 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.label {
+    display: inline-block;
+    font-family: var(--font-mono);
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
+    color: var(--accent);
+    margin-bottom: 1rem;
+    padding: 0.4rem 0.8rem;
+    background: var(--accent-dim);
+    border-radius: 4px;
+}
+
+.description {
+    font-size: clamp(1.1rem, 2vw, 1.5rem);
+    color: var(--secondary);
+    max-width: 600px;
+    font-weight: 300;
+}
+
+/* Grid Layout for Training/Duality */
+.grid-layout {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    gap: 2rem;
+}
+
+.card {
+    grid-column: span 6;
+    background: var(--glass);
+    border: 1px solid var(--glass-border);
+    padding: 3rem;
+    border-radius: 24px;
+    backdrop-filter: blur(20px);
+    transition: transform 0.3s cubic-bezier(0.2, 0, 0, 1), border-color 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-8px);
+    border-color: var(--accent);
+}
+
+.card h3 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    font-weight: 700;
+}
+
+.card p {
+    color: var(--secondary);
+    font-size: 1.1rem;
+}
+
+/* Special Hero Styling */
+#hero h1 span {
+    display: block;
+    opacity: 0.3;
+}
+
+/* Navigation Hint */
+.nav-hint {
+    position: fixed;
+    bottom: 3rem;
+    left: 50%;
+    transform: translateX(-50%);
+    font-family: var(--font-mono);
+    font-size: 0.7rem;
+    letter-spacing: 0.3em;
+    color: var(--secondary);
+    text-transform: uppercase;
+}
+
+/* Minimal Buttons */
+.btn-minimal {
+    display: inline-block;
+    text-decoration: none;
+    color: var(--fg);
+    font-family: var(--font-mono);
+    font-size: 0.8rem;
+    letter-spacing: 0.1em;
+    padding: 0.6rem 1.2rem;
+    border: 1px solid var(--glass-border);
+    border-radius: 4px;
+    margin-right: 1rem;
+    transition: all 0.3s ease;
+}
+
+.btn-minimal:hover {
+    border-color: var(--accent);
+    color: var(--accent);
+    background: var(--accent-dim);
+}
+
+/* Mobile Adjustments */
+@media (max-width: 768px) {
+    .slide { padding: 2rem; }
+    .grid-layout { grid-template-columns: 1fr; }
+    .card { grid-column: 1 !important; padding: 2rem; }
+    h1 { font-size: 3.5rem; }
+}
+
+/* Slide Specific accents */
+#flute .card { border-left: 4px solid #6366f1; }
+#karate .card { border-left: 4px solid #f43f5e; }

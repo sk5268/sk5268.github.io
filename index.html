@@ -1,79 +1,281 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Personal Portfolio</title>
-    <meta name="description" content="Personal portfolio focusing on SLMs, Flute, and Goju Ryu Karate.">
-    <link rel="stylesheet" href="style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700;800&family=JetBrains+Mono:wght@300;500&display=swap" rel="stylesheet">
-</head>
-<body>
-    <div class="bg-layer"></div>
-    
-    <main class="scroll-container">
-        <!-- SLIDE 1: IDENTITY & CORE FOCUS -->
-        <section id="identity" class="slide">
-            <div class="content">
-                <span class="label">The Pursuit</span>
-                <h1>ENGINEERING<br><span>INTELLIGENCE</span></h1>
-                <p class="description">Exploring the recursive nature of Small Language Models. Finding simplicity in complexity.</p>
-            </div>
-        </section>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>SK_5268 | Engineering Intelligence</title>
+        <meta
+            name="description"
+            content="Portfolio of SK_5268 — AI enthusiast, Tiny Language Model researcher, 2nd Dan Black Belt, flutist, and motorcycle rider."
+        />
 
-        <!-- SLIDE 2: CURRENT RESEARCH - SLMs -->
-        <section id="research" class="slide">
-            <div class="content">
-                <span class="label">Current Focus</span>
-                <div class="grid-layout">
-                    <div class="card">
-                        <h3>SLM Distillation</h3>
-                        <p>Currently deep into training and optimizing Small Language Models (SLMs). Obsessed with squeezing maximum reasoning into minimum parameters.</p>
+        <link rel="stylesheet" href="style.css" />
+
+        <!-- Typography -->
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Space+Grotesk:wght@300;400;500;600;700&display=swap"
+            rel="stylesheet"
+        />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap"
+            rel="stylesheet"
+        />
+    </head>
+    <body>
+        <!-- Fixed Nav -->
+        <nav class="fixed-nav">
+            <a href="#intro" class="logo">SK.</a>
+            <div class="nav-links">
+                <a href="#professional">Pro</a>
+                <a href="#building">Build</a>
+                <a href="#hobbies">Ride</a>
+                <a href="#flute">Art</a>
+                <a href="#karate">Ryu</a>
+            </div>
+        </nav>
+
+        <main class="smooth-scroll-wrapper">
+
+            <!-- SLIDE 1: HERO -->
+            <section id="intro" class="panel hero-panel">
+                <div class="hero-bg-accent"></div>
+                <div class="content-wrapper">
+                    <div class="hero-text">
+                        <span class="mono-label">AOSL7 Clearance · SK_5268</span>
+                        <h1>Engineering</h1>
+                        <h1 class="sub">Intelligence.</h1>
+                        <p class="hero-desc">
+                            I live and breathe language models — training Tiny LMs from scratch,<br />
+                            chasing the signal buried in all the noise.
+                        </p>
+                        <div class="links-row">
+                            <a
+                                href="https://github.com/sk5268"
+                                target="_blank"
+                                id="btn-github"
+                                class="magnetic-btn btn-accent"
+                            >GitHub</a>
+                            <a
+                                href="https://www.linkedin.com/in/srimadhava-khandavilli/"
+                                target="_blank"
+                                id="btn-linkedin"
+                                class="magnetic-btn"
+                            >LinkedIn</a>
+                            <a
+                                href="mailto:your-email@example.com"
+                                id="btn-email"
+                                class="magnetic-btn"
+                            >Email</a>
+                        </div>
                     </div>
                 </div>
-            </div>
-        </section>
+            </section>
 
-        <!-- SLIDE 3: AI INTERESTS -->
-        <section id="interests" class="slide">
-            <div class="content">
-                <span class="label">AI Ethos</span>
-                <div class="grid-layout">
-                    <div class="card">
-                        <h3>Local Inference</h3>
-                        <p>Privacy and efficiency through local-first execution. The future of intelligence is decentralized and compact.</p>
+            <!-- SLIDE 2: PROFESSIONAL -->
+            <section id="professional" class="panel text-panel panel-purple">
+                <div class="content-wrapper">
+                    <div class="grid-2-col">
+                        <div class="text-block">
+                            <span class="mono-label">02 / What I Do</span>
+                            <h2>I'm an<br /><span class="highlight">Optimizer</span></h2>
+                            <p>
+                                My obsession sits at the intersection of efficiency and intelligence.
+                                I'm not satisfied with just using AI — I want to understand it, strip it
+                                down, retrain it, and make it do more with less. Small models, big ideas.
+                            </p>
+                            <ul class="tech-list">
+                                <li>Training Tiny Language Models (TLMs) from scratch</li>
+                                <li>Building AI Agents &amp; Multi-Agent systems</li>
+                                <li>Fine-tuning for smarter function calling</li>
+                                <li>Pushing cost, latency &amp; accuracy to their limits</li>
+                                <li>Running everything locally — no cloud dependency</li>
+                            </ul>
+                        </div>
+                        <div class="visual-block">
+                            <div class="code-card">
+                                <div class="code-header">
+                                    <span class="dot"></span>
+                                    <span class="dot"></span>
+                                    <span class="dot"></span>
+                                </div>
+                                <code>
+                                    <span class="cm"># My daily driver</span><br />
+                                    <span class="k">class</span> <span class="f">TinyLM</span>:<br />
+                                    &nbsp;&nbsp;<span class="k">def</span> <span class="f">__init__</span>(self):<br />
+                                    &nbsp;&nbsp;&nbsp;&nbsp;self.<span class="v">params</span> = <span class="s">"&lt;1B"</span><br />
+                                    &nbsp;&nbsp;&nbsp;&nbsp;self.<span class="v">goal</span> &nbsp;= <span class="s">"max intel"</span><br />
+                                    <br />
+                                    &nbsp;&nbsp;<span class="k">def</span> <span class="f">optimize</span>(self, <span class="v">model</span>):<br />
+                                    &nbsp;&nbsp;&nbsp;&nbsp;latency  = <span class="f">minimize</span>(model.inf)<br />
+                                    &nbsp;&nbsp;&nbsp;&nbsp;accuracy = <span class="f">maximize</span>(model.eval)<br />
+                                    &nbsp;&nbsp;&nbsp;&nbsp;<span class="k">return</span> <span class="f">balance</span>(latency, accuracy)
+                                </code>
+                            </div>
+
+                            <div class="stat-grid">
+                                <div class="stat-item s-orange">
+                                    <div class="num">&lt;1B</div>
+                                    <div class="label">Model params</div>
+                                </div>
+                                <div class="stat-item s-purple">
+                                    <div class="num">4+</div>
+                                    <div class="label">Distros I run</div>
+                                </div>
+                                <div class="stat-item s-cyan">
+                                    <div class="num">2nd</div>
+                                    <div class="label">Dan Black Belt</div>
+                                </div>
+                                <div class="stat-item s-orange">
+                                    <div class="num">∞</div>
+                                    <div class="label">Tinkering hours</div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
-            </div>
-        </section>
+            </section>
 
-        <!-- SLIDE 4: THE FLUTIST -->
-        <section id="flute" class="slide">
-            <div class="content">
-                <span class="label">Sonic Resonance</span>
-                <h1>THE<br><span>FLUTIST</span></h1>
-                <p class="description">A lifelong journey of breath and frequency. Exploring the intersection of digital precision and organic vibration.</p>
-            </div>
-        </section>
-
-        <!-- SLIDE 5: GOJU RYU -->
-        <section id="karate" class="slide">
-            <div class="content">
-                <span class="label">Goju Ryu</span>
-                <h1>HARD AND<br><span>SOFT</span></h1>
-                <p class="description">Black Belt / 2nd Dan. Discipline forged through the traditional art of Goju Ryu. The balance of absolute power and fluid grace.</p>
-                <div class="contact-footer" style="margin-top: 4rem;">
-                    <a href="#" class="btn-minimal">GitHub</a>
-                    <a href="#" class="btn-minimal">LinkedIn</a>
+            <!-- SLIDE 3: BUILDING -->
+            <section id="building" class="panel text-panel panel-cyan" style="background-color: #07070b;">
+                <div class="content-wrapper">
+                    <div class="text-block" style="max-width: 720px; margin-bottom: 2.5rem;">
+                        <span class="mono-label">03 / What I Build</span>
+                        <h2>I Don't Just<br /><span class="highlight" style="background: linear-gradient(90deg, var(--accent-3), var(--accent-2)); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;">Research</span></h2>
+                        <p>
+                            If I find myself doing something tedious more than once, I automate it.
+                            If a tool doesn't exist the way I need it, I build it. Here's what's
+                            been keeping me up at night lately.
+                        </p>
+                    </div>
+                    <div class="grid-2-col" style="gap: 1.5rem; align-items: start;">
+                        <div class="project-card card-orange">
+                            <h3>AI Assistant TOC</h3>
+                            <p>
+                                I built this because I was tired of losing my place in long AI
+                                conversations. It adds a smart Table of Contents, resizable pane,
+                                and quick navigation to ChatGPT, Gemini &amp; Perplexity.
+                            </p>
+                            <span class="card-tag">Browser Extension</span>
+                        </div>
+                        <div class="project-card card-purple">
+                            <h3>Tiny LM Training Pipeline</h3>
+                            <p>
+                                My main research project — an end-to-end pipeline for training small
+                                language models entirely from scratch. I'm pushing them toward smarter
+                                function calling and agentic reasoning.
+                            </p>
+                            <span class="card-tag">AI Research</span>
+                        </div>
+                        <div class="project-card card-cyan">
+                            <h3>Dojo Manager</h3>
+                            <p>
+                                I run a karate dojo and needed a way to manage it. So I built one —
+                                a website and Android app for member tracking, grading schedules,
+                                and attendance. Vibe-coded and battle-tested.
+                            </p>
+                            <span class="card-tag">Full Stack</span>
+                        </div>
+                        <div class="project-card card-purple" style="border-color: rgba(255,255,255,0.05);">
+                            <h3>A Few Things About Me</h3>
+                            <ul class="fun-list">
+                                <li>
+                                    <span class="emoji">😄</span>
+                                    <span>I use <strong style="color: white;">Grok</strong> more than Gemini, ChatGPT, or Claude — yes, really</span>
+                                </li>
+                                <li>
+                                    <span class="emoji">🐧</span>
+                                    <span>I distro hop every 4 months — currently juggling macOS, Windows, Fedora, and <em style="color: var(--accent-2);">$distro_of_the_quarter</em></span>
+                                </li>
+                                <li>
+                                    <span class="emoji">🏠</span>
+                                    <span>I'm rewiring my home and making every cable completely invisible</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
                 </div>
-            </div>
-        </section>
-    </main>
+            </section>
 
-    <div class="nav-hint">Scroll to navigate</div>
-    
-    <script src="script.js"></script>
-</body>
+            <!-- SLIDE 4: BIKE / LIFESTYLE -->
+            <section id="hobbies" class="panel image-panel left-aligned">
+                <div class="bg-image-container">
+                    <img
+                        src="assets/hero.jpeg"
+                        alt="Me on my motorcycle"
+                        class="bg-image"
+                        style="object-position: center center; filter: contrast(1.05) brightness(0.6) saturate(1.15);"
+                    />
+                    <div class="overlay bike-overlay"></div>
+                </div>
+                <div class="content-wrapper">
+                    <div class="text-block floating">
+                        <span class="mono-label">04 / Two Wheels</span>
+                        <h2 style="background: linear-gradient(90deg, var(--accent), #ffab35); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;">Ride<br />Free</h2>
+                        <p>
+                            When my head is too full of model weights and training loss curves,
+                            I get on the bike. I'm still working out a stubborn tight gearbox —
+                            but two wheels and an open road fix almost everything.
+                        </p>
+                        <span class="badge badge-orange">🏍️ Motorcycles</span>
+                    </div>
+                </div>
+            </section>
+
+            <!-- SLIDE 5: FLUTE -->
+            <section id="flute" class="panel image-panel right-aligned">
+                <div class="bg-image-container">
+                    <img
+                        src="assets/flute.JPG"
+                        alt="Flute Performance"
+                        class="bg-image parallax"
+                    />
+                    <div class="overlay gradient-overlay"></div>
+                </div>
+                <div class="content-wrapper">
+                    <div class="text-block floating">
+                        <span class="mono-label">05 / Sonic</span>
+                        <h2 style="background: linear-gradient(90deg, var(--accent-2), var(--accent-3)); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;">Learning<br />the Flute</h2>
+                        <p>
+                            I picked up the flute because I wanted to understand music the way I
+                            understand code — from the fundamentals up. Still figuring it out.
+                            Breath into frequency, imperfect and beautiful.
+                        </p>
+                        <span class="badge badge-purple">🎵 Music</span>
+                    </div>
+                </div>
+            </section>
+
+            <!-- SLIDE 6: KARATE -->
+            <section id="karate" class="panel image-panel left-aligned">
+                <div class="bg-image-container">
+                    <img
+                        src="assets/karate.jpg"
+                        alt="Okinawa Goju Ryu Karate"
+                        class="bg-image parallax"
+                    />
+                    <div class="overlay dark-overlay"></div>
+                </div>
+                <div class="content-wrapper">
+                    <div class="text-block floating">
+                        <span class="mono-label">06 / Ryu</span>
+                        <h2 style="background: linear-gradient(90deg, #ff4040, var(--accent)); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;">Hard &amp;<br />Soft</h2>
+                        <p>
+                            I hold a 2nd Dan Black Belt in <strong style="color: white;">Okinawa Goju Ryu</strong> Karate under TOGKF.
+                            Karate taught me the same thing good engineering does —
+                            power means nothing without precision and control.
+                        </p>
+                        <div style="display: flex; gap: 0.75rem; flex-wrap: wrap; margin-top: 1.25rem;">
+                            <span class="badge" style="background: rgba(255,64,64,0.15); color: #ff6060; border: 1px solid rgba(255,64,64,0.3);">🥋 2nd Dan Black Belt</span>
+                            <span class="badge" style="background: rgba(255,107,53,0.15); color: var(--accent); border: 1px solid rgba(255,107,53,0.3);">TOGKF</span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+        </main>
+
+        <script src="script.js"></script>
+    </body>
 </html>

@@ -3,279 +3,970 @@
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>SK_5268 | Engineering Intelligence</title>
+        <title>Srimadhava Khandavilli — Multi-Agent Systems, LLM APIs &amp; AWS Platforms</title>
         <meta
             name="description"
-            content="Portfolio of SK_5268 — AI enthusiast, Tiny Language Model researcher, 2nd Dan Black Belt, flutist, and motorcycle rider."
+            content="Srimadhava Khandavilli (SK_5268) — applied AI engineer building multi-agent systems with LangGraph, LangChain and MCP, fine-tuning domain-specific Tiny Language Models for fast CPU inference, and shipping end-to-end platforms on AWS (EC2, S3, RDS, SageMaker). 1,600+ installs across my dev tools."
+        />
+        <meta name="author" content="Srimadhava Khandavilli" />
+        <meta
+            name="keywords"
+            content="Srimadhava Khandavilli, SK_5268, multi-agent systems, agent orchestration, LangGraph, LangChain, MCP servers, tool calling, LLM APIs, RAG, Tiny Language Models, TLM, LLM fine-tuning, SageMaker, EC2, S3, RDS, Docker, AWS, applied AI, CPU inference, Android, Kotlin, Hyderabad"
+        />
+        <link rel="canonical" href="https://sk5268.github.io/" />
+
+        <!-- Social -->
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://sk5268.github.io/" />
+        <meta property="og:title" content="Srimadhava Khandavilli — Tiny Language Models &amp; AI Tooling" />
+        <meta
+            property="og:description"
+            content="Multi-agent systems, LLM APIs and orchestration. Domain-specific Tiny Language Models that run locally on CPU. End-to-end platforms shipped on AWS."
+        />
+        <meta property="og:image" content="https://sk5268.github.io/assets/opt/hero-1280.jpg" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="Srimadhava Khandavilli — Tiny Language Models &amp; AI Tooling" />
+        <meta
+            name="twitter:description"
+            content="Domain-specific Tiny Language Models that run locally on CPU. Automation tools built from scratch. End-to-end platforms shipped on AWS."
+        />
+        <meta name="twitter:image" content="https://sk5268.github.io/assets/opt/hero-1280.jpg" />
+
+        <meta name="theme-color" content="#07070b" />
+        <link
+            rel="icon"
+            href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='22' fill='%2307070b'/%3E%3Ctext x='50' y='68' font-family='monospace' font-size='46' font-weight='700' fill='%23ff8a4c' text-anchor='middle'%3ESK%3C/text%3E%3C/svg%3E"
         />
 
-        <link rel="stylesheet" href="style.css" />
-
-        <!-- Typography -->
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
         <link
-            href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Space+Grotesk:wght@300;400;500;600;700&display=swap"
+            href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;700&display=swap"
             rel="stylesheet"
         />
-        <link
-            href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap"
-            rel="stylesheet"
-        />
+        <link rel="stylesheet" href="style.css" />
+
+        <script type="application/ld+json">
+            {
+                "@context": "https://schema.org",
+                "@type": "Person",
+                "name": "Srimadhava Khandavilli",
+                "alternateName": "SK_5268",
+                "url": "https://sk5268.github.io/",
+                "jobTitle": "Applied AI Engineer — Multi-Agent Systems & Cloud Platforms",
+                "description": "Applied AI engineer working on domain-specific Tiny Language Models, automation tooling, and end-to-end platforms.",
+                "address": { "@type": "PostalAddress", "addressLocality": "Hyderabad", "addressCountry": "IN" },
+                "knowsAbout": [
+                    "Multi-agent systems",
+                    "Agent orchestration",
+                    "LangChain",
+                    "LangGraph",
+                    "Model Context Protocol (MCP)",
+                    "LLM APIs",
+                    "Tool and function calling",
+                    "Retrieval augmented generation",
+                    "Prompt engineering",
+                    "Tiny Language Models",
+                    "LLM fine-tuning",
+                    "CPU and on-device inference",
+                    "Amazon EC2",
+                    "Amazon S3",
+                    "Amazon RDS",
+                    "Amazon SageMaker",
+                    "Docker",
+                    "AWS",
+                    "Python",
+                    "Android development",
+                    "Full-stack development"
+                ],
+                "sameAs": [
+                    "https://github.com/sk5268",
+                    "https://www.linkedin.com/in/srimadhava-khandavilli/"
+                ]
+            }
+        </script>
     </head>
     <body>
-        <!-- Fixed Nav -->
-        <nav class="fixed-nav">
-            <a href="#intro" class="logo">SK.</a>
-            <div class="nav-links">
-                <a href="#professional">Pro</a>
-                <a href="#building">Build</a>
-                <a href="#hobbies">Ride</a>
-                <a href="#flute">Art</a>
-                <a href="#karate">Ryu</a>
+        <a class="skip-link" href="#main">Skip to content</a>
+
+        <!-- ============ NAV ============ -->
+        <header class="site-nav" id="site-nav">
+            <div class="nav-inner">
+                <a href="#top" class="brand" aria-label="Srimadhava Khandavilli — home">
+                    <span class="brand-mark">SK</span>
+                    <span class="brand-text">
+                        <strong>Srimadhava Khandavilli</strong>
+                        <em>Applied AI · Tiny Language Models</em>
+                    </span>
+                </a>
+
+                <nav class="nav-links" id="nav-links" aria-label="Sections">
+                    <a href="#focus">Focus</a>
+                    <a href="#work">Work</a>
+                    <a href="#freelance">Freelance</a>
+                    <a href="#beyond">Beyond code</a>
+                </nav>
+
+                <div class="nav-actions">
+                    <a
+                        class="btn btn-ghost nav-cta"
+                        href="https://www.linkedin.com/in/srimadhava-khandavilli/"
+                        target="_blank"
+                        rel="noopener"
+                        >Let's talk</a
+                    >
+                    <button
+                        class="menu-toggle"
+                        id="menu-toggle"
+                        type="button"
+                        aria-expanded="false"
+                        aria-controls="nav-links"
+                        aria-label="Open navigation menu"
+                    >
+                        <span></span><span></span>
+                    </button>
+                </div>
             </div>
-        </nav>
+            <div class="scroll-rail" id="scroll-rail" aria-hidden="true"></div>
+        </header>
 
-        <main class="smooth-scroll-wrapper">
+        <main id="main">
+            <!-- ============ HERO ============ -->
+            <section class="hero" id="top">
+                <div class="hero-grid" aria-hidden="true"></div>
+                <div class="hero-glow g1" aria-hidden="true"></div>
+                <div class="hero-glow g2" aria-hidden="true"></div>
 
-            <!-- SLIDE 1: HERO -->
-            <section id="intro" class="panel hero-panel">
-                <div class="hero-bg-accent"></div>
-                <div class="content-wrapper">
-                    <div class="hero-text">
-                        <span class="mono-label">AOSL7 Clearance · SK_5268</span>
-                        <h1>Engineering</h1>
-                        <h1 class="sub">Intelligence.</h1>
-                        <p class="hero-desc">
-                            I live and breathe language models — training Tiny LMs from scratch,<br />
-                            chasing the signal buried in all the noise.
+                <div class="wrap hero-wrap">
+                    <div class="hero-copy">
+                        <p class="status-pill">
+                            <span class="pulse" aria-hidden="true"></span>
+                            Open to AI / ML &amp; platform engineering roles
                         </p>
-                        <div class="links-row">
+
+                        <h1>
+                            I make AI <span class="grad">small enough</span> to run
+                            <span class="nowrap">on your laptop.</span>
+                        </h1>
+
+                        <p class="lede">
+                            I'm <strong>Srimadhava Khandavilli</strong> — an applied AI engineer. I fine-tune and orchestrate
+                            <strong>domain-specific Tiny Language Models</strong>, strip them down until they run
+                            fast and fully offline on a CPU, and then build the tooling and agent systems around them that
+                            <em>didn't exist until I built it</em>.
+                        </p>
+
+                        <p class="lede lede-2">
+                            When a problem needs a whole product, I freelance the full stack — backend,
+                            frontend, and the AWS plumbing that keeps it up: EC2, S3, RDS, and the rest.
+                        </p>
+
+                        <div class="cta-row">
+                            <a class="btn btn-primary" href="#work">
+                                See what I've built
+                                <svg viewBox="0 0 16 16" aria-hidden="true"><path d="M3 8h9M8.5 4l4 4-4 4" /></svg>
+                            </a>
                             <a
+                                class="btn btn-outline"
                                 href="https://github.com/sk5268"
                                 target="_blank"
-                                id="btn-github"
-                                class="magnetic-btn btn-accent"
-                            >GitHub</a>
+                                rel="noopener"
+                            >
+                                <svg class="ico" viewBox="0 0 16 16" aria-hidden="true"
+                                    ><path
+                                        d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82a7.4 7.4 0 0 1 2-.27c.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8Z"
+                                /></svg
+                                >GitHub
+                            </a>
                             <a
+                                class="btn btn-outline"
                                 href="https://www.linkedin.com/in/srimadhava-khandavilli/"
                                 target="_blank"
-                                id="btn-linkedin"
-                                class="magnetic-btn"
-                            >LinkedIn</a>
-                            <a
-                                href="mailto:your-email@example.com"
-                                id="btn-email"
-                                class="magnetic-btn"
-                            >Email</a>
+                                rel="noopener"
+                            >
+                                <svg class="ico" viewBox="0 0 16 16" aria-hidden="true"
+                                    ><path
+                                        d="M3.6 1.6a2 2 0 1 1-4 0 2 2 0 0 1 4 0ZM0 5h3.2v10H0V5Zm5.2 0h3.06v1.37h.05c.43-.78 1.47-1.6 3.03-1.6 3.24 0 3.84 2.05 3.84 4.72V15H12v-4.9c0-1.17-.02-2.67-1.65-2.67-1.65 0-1.9 1.27-1.9 2.58V15H5.2V5Z"
+                                /></svg
+                                >LinkedIn
+                            </a>
                         </div>
+
+                        <ul class="hero-tags" aria-label="Core skills">
+                            <li>Tiny Language Models</li>
+                            <li>Multi-agent orchestration</li>
+                            <li>LangGraph &amp; LangChain</li>
+                            <li>LLM APIs &amp; MCP</li>
+                            <li>AWS: EC2 · S3 · RDS · SageMaker</li>
+                            <li>Local / CPU inference</li>
+                        </ul>
                     </div>
-                </div>
-            </section>
 
-            <!-- SLIDE 2: PROFESSIONAL -->
-            <section id="professional" class="panel text-panel panel-purple">
-                <div class="content-wrapper">
-                    <div class="grid-2-col">
-                        <div class="text-block">
-                            <span class="mono-label">02 / What I Do</span>
-                            <h2>I'm an<br /><span class="highlight">Optimizer</span></h2>
-                            <p>
-                                My obsession sits at the intersection of efficiency and intelligence.
-                                I'm not satisfied with just using AI — I want to understand it, strip it
-                                down, retrain it, and make it do more with less. Small models, big ideas.
-                            </p>
-                            <ul class="tech-list">
-                                <li>Training Tiny Language Models (TLMs) from scratch</li>
-                                <li>Building AI Agents &amp; Multi-Agent systems</li>
-                                <li>Fine-tuning for smarter function calling</li>
-                                <li>Pushing cost, latency &amp; accuracy to their limits</li>
-                                <li>Running everything locally — no cloud dependency</li>
-                            </ul>
-                        </div>
-                        <div class="visual-block">
-                            <div class="code-card">
-                                <div class="code-header">
-                                    <span class="dot"></span>
-                                    <span class="dot"></span>
-                                    <span class="dot"></span>
-                                </div>
-                                <code>
-                                    <span class="cm"># My daily driver</span><br />
-                                    <span class="k">class</span> <span class="f">TinyLM</span>:<br />
-                                    &nbsp;&nbsp;<span class="k">def</span> <span class="f">__init__</span>(self):<br />
-                                    &nbsp;&nbsp;&nbsp;&nbsp;self.<span class="v">params</span> = <span class="s">"&lt;1B"</span><br />
-                                    &nbsp;&nbsp;&nbsp;&nbsp;self.<span class="v">goal</span> &nbsp;= <span class="s">"max intel"</span><br />
-                                    <br />
-                                    &nbsp;&nbsp;<span class="k">def</span> <span class="f">optimize</span>(self, <span class="v">model</span>):<br />
-                                    &nbsp;&nbsp;&nbsp;&nbsp;latency  = <span class="f">minimize</span>(model.inf)<br />
-                                    &nbsp;&nbsp;&nbsp;&nbsp;accuracy = <span class="f">maximize</span>(model.eval)<br />
-                                    &nbsp;&nbsp;&nbsp;&nbsp;<span class="k">return</span> <span class="f">balance</span>(latency, accuracy)
-                                </code>
+                    <!-- Code card -->
+                    <div class="hero-visual">
+                        <figure class="code-card">
+                            <div class="code-bar">
+                                <span class="dot r"></span><span class="dot y"></span><span class="dot g"></span>
+                                <span class="code-title">tlm/distill.py</span>
                             </div>
+                            <pre><code><span class="c-cm"># not every problem needs a frontier model.</span>
+<span class="c-cm"># most need a small, fast, boring one that always works.</span>
 
-                            <div class="stat-grid">
-                                <div class="stat-item s-orange">
-                                    <div class="num">&lt;1B</div>
-                                    <div class="label">Model params</div>
-                                </div>
-                                <div class="stat-item s-purple">
-                                    <div class="num">4+</div>
-                                    <div class="label">Distros I run</div>
-                                </div>
-                                <div class="stat-item s-cyan">
-                                    <div class="num">2nd</div>
-                                    <div class="label">Dan Black Belt</div>
-                                </div>
-                                <div class="stat-item s-orange">
-                                    <div class="num">∞</div>
-                                    <div class="label">Tinkering hours</div>
-                                </div>
+<span class="c-k">class</span> <span class="c-t">TinyLM</span>:
+    params      = <span class="c-s">"domain-specific, &lt;1B"</span>
+    device      = <span class="c-s">"cpu"</span>        <span class="c-cm"># no GPU, no cloud, no bill</span>
+    network     = <span class="c-k">None</span>         <span class="c-cm"># runs on a plane</span>
+    latency_ms  = <span class="c-n">34</span>
+
+    <span class="c-k">def</span> <span class="c-f">teach</span>(self, task, data):
+        self.model = <span class="c-f">finetune</span>(base=<span class="c-s">"qwen2.5"</span>,
+                                   objective=<span class="c-s">"tool_calling"</span>,
+                                   data=data)
+        <span class="c-k">return</span> self.<span class="c-f">evaluate</span>()  <span class="c-cm"># if it's slower, it isn't done</span>
+
+    <span class="c-k">def</span> <span class="c-f">ship</span>(self):
+        <span class="c-k">return</span> <span class="c-f">quantize</span>(self.model, int8=<span class="c-k">True</span>)  <span class="c-cm"># smaller, faster</span></code></pre>
+                            <figcaption class="code-foot">
+                                <span>train → shrink → measure → ship</span>
+                                <span class="ok">✓ offline</span>
+                            </figcaption>
+                        </figure>
+
+                        <div class="glass-note">
+                            <span class="glass-ico" aria-hidden="true">🗺️</span>
+                            <div>
+                                <strong>Google Maps Local Guide · Level 7</strong>
+                                <p>Thousands of contributions — I map the places nobody else bothers to.</p>
                             </div>
                         </div>
                     </div>
                 </div>
+
+                <!-- STAT BAR -->
+                <div class="wrap">
+                    <ul class="stat-bar" aria-label="At a glance">
+                        <li>
+                            <span class="num" data-count="2">2</span>
+                            <span class="lbl">Android apps shipped to Google Play</span>
+                        </li>
+                        <li>
+                            <span class="num" data-count="1200" data-suffix="+">1200+</span>
+                            <span class="lbl">Installs of my VS Code extension</span>
+                        </li>
+                        <li>
+                            <span class="num" data-count="400" data-suffix="+">400+</span>
+                            <span class="lbl">Installs of my browser extension</span>
+                        </li>
+                        <li>
+                            <span class="num" data-count="7">7</span>
+                            <span class="lbl">Google Maps Local Guide level</span>
+                        </li>
+                    </ul>
+                </div>
             </section>
 
-            <!-- SLIDE 3: BUILDING -->
-            <section id="building" class="panel text-panel panel-cyan" style="background-color: #07070b;">
-                <div class="content-wrapper">
-                    <div class="text-block" style="max-width: 720px; margin-bottom: 2.5rem;">
-                        <span class="mono-label">03 / What I Build</span>
-                        <h2>I Don't Just<br /><span class="highlight" style="background: linear-gradient(90deg, var(--accent-3), var(--accent-2)); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;">Research</span></h2>
-                        <p>
-                            If I find myself doing something tedious more than once, I automate it.
-                            If a tool doesn't exist the way I need it, I build it. Here's what's
-                            been keeping me up at night lately.
+            <!-- ============ FOCUS / THREE PILLARS ============ -->
+            <section class="section" id="focus">
+                <div class="wrap">
+                    <header class="sec-head reveal">
+                        <p class="kicker">01 — What I actually do</p>
+                        <h2>Three things, done properly.</h2>
+                        <p class="sub">
+                            I care about the plumbing more than the demo. If it can't run reliably,
+                            offline, and on hardware you already own — it isn't finished yet.
                         </p>
-                    </div>
-                    <div class="grid-2-col" style="gap: 1.5rem; align-items: start;">
-                        <div class="project-card card-orange">
-                            <h3>AI Assistant TOC</h3>
+                    </header>
+
+                    <div class="pillars">
+                        <article class="pillar reveal">
+                            <div class="pillar-top">
+                                <span class="pillar-idx">01</span>
+                                <span class="pillar-emoji" aria-hidden="true">🧠</span>
+                            </div>
+                            <h3>Applied AI &amp; Tiny Language Models</h3>
                             <p>
-                                I built this because I was tired of losing my place in long AI
-                                conversations. It adds a smart Table of Contents, resizable pane,
-                                and quick navigation to ChatGPT, Gemini &amp; Perplexity.
+                                I train and fine-tune <strong>domain-specific small models</strong> instead of
+                                reaching for a frontier API. The goal is always the same: fewer parameters,
+                                lower latency, and inference that happens on the CPU in front of you.
                             </p>
-                            <span class="card-tag">Browser Extension</span>
-                        </div>
-                        <div class="project-card card-purple">
-                            <h3>Tiny LM Training Pipeline</h3>
-                            <p>
-                                My main research project — an end-to-end pipeline for training small
-                                language models entirely from scratch. I'm pushing them toward smarter
-                                function calling and agentic reasoning.
-                            </p>
-                            <span class="card-tag">AI Research</span>
-                        </div>
-                        <div class="project-card card-cyan">
-                            <h3>Dojo Manager</h3>
-                            <p>
-                                I run a karate dojo and needed a way to manage it. So I built one —
-                                a website and Android app for member tracking, grading schedules,
-                                and attendance. Vibe-coded and battle-tested.
-                            </p>
-                            <span class="card-tag">Full Stack</span>
-                        </div>
-                        <div class="project-card card-purple" style="border-color: rgba(255,255,255,0.05);">
-                            <h3>A Few Things About Me</h3>
-                            <ul class="fun-list">
-                                <li>
-                                    <span class="emoji">😄</span>
-                                    <span>I use <strong style="color: white;">Grok</strong> more than Gemini, ChatGPT, or Claude — yes, really</span>
-                                </li>
-                                <li>
-                                    <span class="emoji">🐧</span>
-                                    <span>I distro hop every 4 months — currently juggling macOS, Windows, Fedora, and <em style="color: var(--accent-2);">$distro_of_the_quarter</em></span>
-                                </li>
-                                <li>
-                                    <span class="emoji">🏠</span>
-                                    <span>I'm rewiring my home and making every cable completely invisible</span>
-                                </li>
+                            <ul class="chips">
+                                <li>Fine-tuning</li>
+                                <li>Distillation</li>
+                                <li>Quantisation</li>
+                                <li>Function calling</li>
+                                <li>Local inference</li>
+                                <li>Evaluation</li>
                             </ul>
+                        </article>
+
+                        <article class="pillar reveal">
+                            <div class="pillar-top">
+                                <span class="pillar-idx">02</span>
+                                <span class="pillar-emoji" aria-hidden="true">🛠️</span>
+                            </div>
+                            <h3>Tools &amp; automation that didn't exist</h3>
+                            <p>
+                                Most of my repos start with a small annoyance. I look for the tool, find
+                                nothing that fits, and build it — usually in an evening, usually as a
+                                browser extension, a CLI, or something that hooks into a service that has no API.
+                            </p>
+                            <ul class="chips">
+                                <li>Browser extensions</li>
+                                <li>Web scraping</li>
+                                <li>Agentic workflows</li>
+                                <li>CLI tooling</li>
+                                <li>OS integrations</li>
+                            </ul>
+                        </article>
+
+                        <article class="pillar reveal">
+                            <div class="pillar-top">
+                                <span class="pillar-idx">03</span>
+                                <span class="pillar-emoji" aria-hidden="true">☁️</span>
+                            </div>
+                            <h3>End-to-end platforms, shipped</h3>
+                            <p>
+                                On contract I take an idea all the way: data model, API, frontend, and the
+                                deploy. I've run backends, wired up frontends, and kept it all standing on
+                                AWS — including the unglamorous parts nobody puts on a slide.
+                            </p>
+                            <ul class="chips">
+                                <li>Backend &amp; APIs</li>
+                                <li>Frontend</li>
+                                <li>AWS hosting</li>
+                                <li>CI/CD</li>
+                                <li>Containers</li>
+                            </ul>
+                        </article>
+                    </div>
+                </div>
+            </section>
+
+            <!-- ============ FEATURED WORK ============ -->
+            <section class="section section-alt" id="work">
+                <div class="wrap">
+                    <header class="sec-head reveal">
+                        <p class="kicker">02 — Selected work</p>
+                        <h2>Six things I built because nothing else did the job.</h2>
+                        <p class="sub">
+                            Ordered by what I think is most useful. For each one the interesting part
+                            isn't the code — it's <em>why</em> it had to exist. That's usually the same
+                            reason I'll be useful to you.
+                        </p>
+                    </header>
+
+                    <div class="feature-list">
+                        <!-- 1 -->
+                        <article class="feature reveal">
+                            <div class="feature-media">
+                                <div class="media-inner agy">
+                                    <div class="agy-mock" aria-hidden="true">
+                                        <div class="agy-phone">
+                                            <div class="agy-notch"></div>
+                                            <div class="agy-line w70"></div>
+                                            <div class="agy-line w90 hl"></div>
+                                            <div class="agy-line w55"></div>
+                                            <div class="agy-line w80"></div>
+                                            <div class="agy-line w40 hl"></div>
+                                        </div>
+                                        <div class="agy-link">
+                                            <span class="agy-dot"></span>
+                                            <span class="agy-dot"></span>
+                                            <span class="agy-dot"></span>
+                                        </div>
+                                        <div class="agy-laptop">
+                                            <div class="agy-term">
+                                                <span class="c-cm">$</span> agy session --attach
+                                                <br /><span class="c-s">▸ skills · mcp · subagents</span>
+                                                <br /><span class="c-cm">streaming to phone…</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <p class="media-cap">laptop becomes the server · phone becomes the client</p>
+                                </div>
+                            </div>
+                            <div class="feature-body">
+                                <div class="feature-meta">
+                                    <span class="tag tag-live">In development</span>
+                                    <span class="meta-dot">Kotlin · SSH</span>
+                                </div>
+                                <h3>AGY Remote — my agent, in my pocket</h3>
+                                <p>
+                                    I kept leaving a long agent session running and then having to walk back
+                                    to the desk for it. So I built the client that should have existed: an
+                                    unofficial <strong>Antigravity CLI</strong> remote that turns your
+                                    laptop or desktop into a server and your phone into the client.
+                                </p>
+                                <p>
+                                    It's a full client, not a viewer — <strong>skills, MCP servers,
+                                    custom subagents, terminal access, a file browser</strong>, and you can
+                                    attach an image and just ask it to build the thing. My most recent
+                                    work, still in active development.
+                                </p>
+                                <ul class="chips chips-sm">
+                                    <li>MCP</li>
+                                    <li>Subagents</li>
+                                    <li>Skills</li>
+                                    <li>Terminal over SSH</li>
+                                    <li>File transfer</li>
+                                </ul>
+                                <div class="feature-actions">
+                                    <a
+                                        class="feature-link"
+                                        href="https://play.google.com/store/apps/details?id=com.aosl7.agyremote"
+                                        target="_blank"
+                                        rel="noopener"
+                                        >On Google Play
+                                        <svg viewBox="0 0 16 16" aria-hidden="true">
+                                            <path d="M4 12 12 4M6 4h6v6" /></svg
+                                    ></a>
+                                </div>
+                            </div>
+                        </article>
+
+                        <!-- 2 -->
+                        <article class="feature reverse reveal">
+                            <div class="feature-media">
+                                <div class="media-inner ext">
+                                    <div class="ext-window" aria-hidden="true">
+                                        <div class="ext-head"><span></span><span></span><span></span></div>
+                                        <div class="ext-row w80"></div>
+                                        <div class="ext-row w60"></div>
+                                        <div class="ext-row w90 hl"></div>
+                                        <div class="ext-row w70"></div>
+                                        <div class="ext-row w40 hl"></div>
+                                    </div>
+                                    <p class="media-cap">400+ installs · before Gemini had a button</p>
+                                </div>
+                            </div>
+                            <div class="feature-body">
+                                <div class="feature-meta">
+                                    <span class="tag tag-tools">Shipped &amp; adopted</span>
+                                    <span class="meta-dot">JS · VS Code · TypeScript</span>
+                                    <span class="stars" title="1600+ combined installs">★ 1600+ installs</span>
+                                </div>
+                                <h3>The extensions I built before the feature existed</h3>
+                                <p>
+                                    Long before Google put a <strong>Gemini button</strong> on YouTube, I was
+                                    pasting the same video link and retyping the same summarise prompt over
+                                    and over. So I automated myself out of it — the extension summarises the
+                                    video, and the companion <strong>AI_TOC</strong> extension gives long AI
+                                    chats a table of contents, because scrolling to find one answer is
+                                    absurd. <strong>400+ installs.</strong>
+                                </p>
+                                <p>
+                                    Same instinct, different tool: I got tired of hand-converting notebooks,
+                                    so <strong>Ipynb2Py</strong> does it from the VS Code command palette.
+                                    That one is past <strong>1,200 installs</strong> — other people had the
+                                    same annoyance.
+                                </p>
+                                <ul class="chips chips-sm">
+                                    <li>Shipped pre-Gemini-button</li>
+                                    <li>Zero-config</li>
+                                    <li>Still maintained</li>
+                                </ul>
+                                <div class="feature-actions">
+                                    <a
+                                        class="feature-link"
+                                        href="https://github.com/sk5268/AI_TOC"
+                                        target="_blank"
+                                        rel="noopener"
+                                        >AI_TOC
+                                        <svg viewBox="0 0 16 16" aria-hidden="true">
+                                            <path d="M4 12 12 4M6 4h6v6" /></svg
+                                    ></a>
+                                    <a
+                                        class="feature-link muted"
+                                        href="https://github.com/sk5268/Gemini_Xtension"
+                                        target="_blank"
+                                        rel="noopener"
+                                        >Gemini_Xtension</a
+                                    >
+                                    <a
+                                        class="feature-link muted"
+                                        href="https://github.com/sk5268/Ipynb2Py_VSCode"
+                                        target="_blank"
+                                        rel="noopener"
+                                        >Ipynb2Py_VSCode</a
+                                    >
+                                </div>
+                            </div>
+                        </article>
+
+                        <!-- 3 -->
+                        <article class="feature reveal">
+                            <div class="feature-media">
+                                <div class="media-inner dojo">
+                                    <div class="dojo-mock" aria-hidden="true">
+                                        <div class="dojo-card">
+                                            <span class="dojo-big">150+</span>
+                                            <small>monthly active members</small>
+                                        </div>
+                                        <div class="dojo-rows">
+                                            <div class="dojo-row"><i class="av"></i><span>Attendance</span><em class="ok">synced</em></div>
+                                            <div class="dojo-row"><i class="av"></i><span>Grading</span><em class="ok">synced</em></div>
+                                            <div class="dojo-row"><i class="av"></i><span>Fees</span><em class="ok">synced</em></div>
+                                        </div>
+                                    </div>
+                                    <p class="media-cap">the dojo's admin work, off my sensei's desk</p>
+                                </div>
+                            </div>
+                            <div class="feature-body">
+                                <div class="feature-meta">
+                                    <span class="tag tag-live">Live on Google Play</span>
+                                    <span class="meta-dot">Android · Kotlin</span>
+                                    <span class="stars">150+ MAU</span>
+                                </div>
+                                <h3>Sanbo Dojo — built for one specific person</h3>
+                                <p>
+                                    My sensei was doing the dojo's admin by hand: attendance, gradings,
+                                    member records, all of it on paper and in his head. I built him the app
+                                    instead. It's not a startup idea — it's <em>one dojo's real workflow</em>,
+                                    which is exactly why people actually use it.
+                                </p>
+                                <p>
+                                    <strong>150+ unique monthly active members</strong> and still running. It
+                                    taught me more about shipping software that survives real users than any
+                                    side project I've done.
+                                </p>
+                                <ul class="chips chips-sm">
+                                    <li>Members</li>
+                                    <li>Attendance</li>
+                                    <li>Grading</li>
+                                    <li>Payments</li>
+                                </ul>
+                                <div class="feature-actions">
+                                    <a
+                                        class="feature-link"
+                                        href="https://play.google.com/store/apps/details?id=com.aosl7.sanbo"
+                                        target="_blank"
+                                        rel="noopener"
+                                        >On Google Play
+                                        <svg viewBox="0 0 16 16" aria-hidden="true">
+                                            <path d="M4 12 12 4M6 4h6v6" /></svg
+                                    ></a>
+                                </div>
+                            </div>
+                        </article>
+
+                        <!-- 4 -->
+                        <article class="feature reverse reveal">
+                            <div class="feature-media">
+                                <div class="media-inner hnsw">
+                                    <div class="graph" aria-hidden="true">
+                                        <span style="--x: 12%; --y: 26%"></span>
+                                        <span style="--x: 32%; --y: 62%"></span>
+                                        <span style="--x: 50%; --y: 32%"></span>
+                                        <span style="--x: 68%; --y: 70%"></span>
+                                        <span style="--x: 86%; --y: 40%"></span>
+                                        <span style="--x: 22%; --y: 80%"></span>
+                                    </div>
+                                    <p class="media-cap">3D insert &amp; query lab · live demo</p>
+                                </div>
+                            </div>
+                            <div class="feature-body">
+                                <div class="feature-meta">
+                                    <span class="tag tag-ai">Vector search</span>
+                                    <span class="meta-dot">JavaScript · WebGL</span>
+                                </div>
+                                <h3>HNSW — because no good visualisation existed</h3>
+                                <p>
+                                    I wanted to actually <em>understand</em> the index behind modern vector
+                                    search, not just call a library. I looked for a step-by-step lab and
+                                    there wasn't one — every explanation was a static diagram with arrows
+                                    and a paragraph of hand-waving.
+                                </p>
+                                <p>
+                                    So I built the thing I wanted: you insert and query points in real time
+                                    and <strong>watch the skip-list layers and neighbour graph form</strong>.
+                                    The moment the mental model clicks is the whole point of the project.
+                                </p>
+                                <ul class="chips chips-sm">
+                                    <li>HNSW / NSW</li>
+                                    <li>Skip lists</li>
+                                    <li>Built from scratch</li>
+                                </ul>
+                                <div class="feature-actions">
+                                    <a
+                                        class="feature-link"
+                                        href="https://sk5268.github.io/hnsw/"
+                                        target="_blank"
+                                        rel="noopener"
+                                        >Open the live lab
+                                        <svg viewBox="0 0 16 16" aria-hidden="true">
+                                            <path d="M4 12 12 4M6 4h6v6" /></svg
+                                    ></a>
+                                    <a
+                                        class="feature-link muted"
+                                        href="https://github.com/sk5268/hnsw"
+                                        target="_blank"
+                                        rel="noopener"
+                                        >Source</a
+                                    >
+                                </div>
+                            </div>
+                        </article>
+
+                        <!-- 5 -->
+                        <article class="feature reveal">
+                            <div class="feature-media">
+                                <div class="media-inner cal">
+                                    <div class="cal-grid" aria-hidden="true">
+                                        <span class="filled"></span><span></span><span></span>
+                                        <span></span><span class="filled"></span><span></span>
+                                        <span class="filled"></span><span></span><span></span>
+                                        <span></span><span></span><span class="filled"></span>
+                                    </div>
+                                    <p class="media-cap">timetable image → real calendar events</p>
+                                </div>
+                            </div>
+                            <div class="feature-body">
+                                <div class="feature-meta">
+                                    <span class="tag tag-tools">Automation</span>
+                                    <span class="meta-dot">Python · Vision</span>
+                                    <span class="stars" title="7 GitHub stars">★ 7</span>
+                                </div>
+                                <h3>Timetable photo → populated calendar</h3>
+                                <p>
+                                    A genuinely annoying college problem: your timetable arrives as a JPEG,
+                                    and you retype every class into your calendar by hand. I built this
+                                    <strong>back when nobody had heard of ChatGPT</strong> — there was no
+                                    clever way to do it, so I made one.
+                                </p>
+                                <p>
+                                    Upload the photo, get the events. It's still the clearest example of how
+                                    I work: find the friction, remove it, move on.
+                                </p>
+                                <ul class="chips chips-sm">
+                                    <li>Image parsing</li>
+                                    <li>Google Calendar API</li>
+                                    <li>OAuth</li>
+                                </ul>
+                                <a
+                                    class="feature-link"
+                                    href="https://github.com/sk5268/Image-To-Calendar"
+                                    target="_blank"
+                                    rel="noopener"
+                                    >View project
+                                    <svg viewBox="0 0 16 16" aria-hidden="true">
+                                        <path d="M4 12 12 4M6 4h6v6" /></svg
+                                ></a>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </section>
+
+            <!-- ============ FREELANCE ============ -->
+            <section class="section section-alt" id="freelance">
+                <div class="wrap">
+                    <div class="split">
+                        <div class="split-copy reveal">
+                            <p class="kicker">03 — Freelance</p>
+                            <h2>I also build the whole thing, end to end.</h2>
+                            <p class="sub">
+                                Sometimes a small model isn't the answer and someone just needs the
+                                platform to exist. I take those on too — from the first schema to the
+                                deployed URL, including the agent layer that does the actual work.
+                            </p>
+
+                            <ol class="steps">
+                                <li>
+                                    <span class="step-n">01</span>
+                                    <div>
+                                        <h3>Scope &amp; data model</h3>
+                                        <p>Work out what the thing actually is before writing code. Usually the cheapest week of the project.</p>
+                                    </div>
+                                </li>
+                                <li>
+                                    <span class="step-n">02</span>
+                                    <div>
+                                        <h3>Backend, APIs &amp; agents</h3>
+                                        <p>Services, auth, queues, and the database — plus the LLM and multi-agent layer on top: tool calling, MCP servers, retrieval, and orchestration that degrades gracefully instead of hanging.</p>
+                                    </div>
+                                </li>
+                                <li>
+                                    <span class="step-n">03</span>
+                                    <div>
+                                        <h3>Frontend</h3>
+                                        <p>Interfaces people can use without a walkthrough, responsive by default.</p>
+                                    </div>
+                                </li>
+                                <li>
+                                    <span class="step-n">04</span>
+                                    <div>
+                                        <h3>AWS &amp; operations</h3>
+                                        <p>EC2, S3, RDS, SageMaker, containers, pipelines, TLS, backups, and monitoring — plus the bit everyone forgets: token cost, latency, and what happens when the model call fails at 2am.</p>
+                                    </div>
+                                </li>
+                            </ol>
+
+                            <div class="cta-row">
+                                <a
+                                    class="btn btn-primary"
+                                    href="https://www.linkedin.com/in/srimadhava-khandavilli/"
+                                    target="_blank"
+                                    rel="noopener"
+                                    >Start a conversation</a
+                                >
+                                <a
+                                    class="btn btn-outline"
+                                    href="https://github.com/sk5268"
+                                    target="_blank"
+                                    rel="noopener"
+                                    >Read the code first</a
+                                >
+                            </div>
                         </div>
+
+                        <aside class="split-side reveal">
+                            <div class="side-card side-card-accent">
+                                <h3 class="side-title">Agent orchestration &amp; LLM systems</h3>
+                                <ul class="key-list">
+                                    <li>LangChain</li>
+                                    <li>LangGraph</li>
+                                    <li>Multi-agent systems</li>
+                                    <li>Agentic workflows</li>
+                                    <li>MCP servers</li>
+                                    <li>Tool / function calling</li>
+                                    <li>LLM APIs</li>
+                                    <li>RAG &amp; vector search</li>
+                                    <li>Prompt engineering</li>
+                                    <li>Evals &amp; tracing</li>
+                                    <li>OpenAI · Anthropic · Bedrock</li>
+                                    <li>GPU &amp; CPU inference</li>
+                                </ul>
+                            </div>
+
+                            <div class="side-card">
+                                <h3 class="side-title">AWS &amp; platform</h3>
+                                <ul class="key-list">
+                                    <li>EC2</li>
+                                    <li>S3</li>
+                                    <li>RDS</li>
+                                    <li>SageMaker</li>
+                                    <li>Lambda</li>
+                                    <li>Bedrock</li>
+                                    <li>CloudFront</li>
+                                    <li>Route&nbsp;53</li>
+                                    <li>Docker</li>
+                                    <li>IAM</li>
+                                    <li>GitHub Actions</li>
+                                    <li>Nginx</li>
+                                </ul>
+                            </div>
+
+                            <div class="side-card">
+                                <h3 class="side-title">Everything else</h3>
+                                <ul class="stack-list">
+                                    <li><span>Languages</span><em>Python · TypeScript · Kotlin · C#</em></li>
+                                    <li><span>Backend</span><em>FastAPI · Flask · Node · Celery</em></li>
+                                    <li><span>Data</span><em>PostgreSQL · Redis · SQLite · pgvector</em></li>
+                                    <li><span>Models</span><em>PyTorch · HF Transformers · llama.cpp · GGUF</em></li>
+                                    <li><span>Frontend</span><em>React · Tailwind · vanilla JS</em></li>
+                                </ul>
+                            </div>
+
+                            <div class="side-card side-note">
+                                <h3 class="side-title">How I work</h3>
+                                <ul class="tick-list">
+                                    <li>Small, reviewable increments — you see it working weekly.</li>
+                                    <li>Documented and handed over. No black boxes, no hostage code.</li>
+                                    <li>Cost-aware by instinct: I'd rather optimise a model and a prompt than rent more GPUs.</li>
+                                    <li>Timezone-friendly from India (IST) for EU, UK, and US mornings.</li>
+                                </ul>
+                            </div>
+                        </aside>
                     </div>
                 </div>
             </section>
 
-            <!-- SLIDE 4: BIKE / LIFESTYLE -->
-            <section id="hobbies" class="panel image-panel left-aligned">
-                <div class="bg-image-container">
-                    <img
-                        src="assets/hero.jpeg"
-                        alt="Me on my motorcycle"
-                        class="bg-image"
-                        style="object-position: center center; filter: contrast(1.05) brightness(0.6) saturate(1.15);"
-                    />
-                    <div class="overlay bike-overlay"></div>
-                </div>
-                <div class="content-wrapper">
-                    <div class="text-block floating">
-                        <span class="mono-label">04 / Two Wheels</span>
-                        <h2 style="background: linear-gradient(90deg, var(--accent), #ffab35); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;">Ride<br />Free</h2>
-                        <p>
-                            When my head is too full of model weights and training loss curves,
-                            I get on the bike. I'm still working out a stubborn tight gearbox —
-                            but two wheels and an open road fix almost everything.
+            <!-- ============ BEYOND CODE ============ -->
+            <section class="section" id="beyond">
+                <div class="wrap">
+                    <header class="sec-head reveal">
+                        <p class="kicker">04 — Beyond the terminal</p>
+                        <h2>The parts that keep the other parts working.</h2>
+                        <p class="sub">
+                            Everything here is a different kind of engineering — repetition, patience, and
+                            not being able to fake progress.
                         </p>
-                        <span class="badge badge-orange">🏍️ Motorcycles</span>
+                    </header>
+
+                    <div class="cards-3">
+                        <article class="life-card reveal">
+                            <img
+                                src="assets/opt/karate-1280.jpg"
+                                srcset="
+                                    assets/opt/karate-960.webp   960w,
+                                    assets/opt/karate-1280.webp 1280w,
+                                    assets/opt/karate-1920.webp 1920w
+                                "
+                                sizes="(max-width: 720px) 100vw, 33vw"
+                                alt="Training Okinawa Goju Ryu karate"
+                                width="1280"
+                                height="576"
+                                loading="lazy"
+                                decoding="async"
+                            />
+                            <div class="life-body">
+                                <span class="life-badge">🥋 2nd Dan Black Belt</span>
+                                <h3>Okinawa Goju Ryu</h3>
+                                <p>
+                                    Training since I was a kid, under TOGKF. I also run a small dojo and
+                                    manage its website and apps. Martial arts is the reason I'm comfortable
+                                    being bad at something for a long time before I'm good at it — which is
+                                    most of what machine learning is.
+                                </p>
+                            </div>
+                        </article>
+
+                        <article class="life-card reveal">
+                            <img
+                                src="assets/opt/hero-1280.jpg"
+                                srcset="
+                                    assets/opt/hero-960.webp   960w,
+                                    assets/opt/hero-1280.webp 1280w,
+                                    assets/opt/hero-1600.webp 1600w
+                                "
+                                sizes="(max-width: 720px) 100vw, 33vw"
+                                alt="Motorcycle on the road"
+                                width="1280"
+                                height="751"
+                                loading="lazy"
+                                decoding="async"
+                            />
+                            <div class="life-body">
+                                <span class="life-badge">🏍️ Two wheels</span>
+                                <h3>Riding &amp; fixing</h3>
+                                <p>
+                                    When I need to stop staring at a screen I ride. At the moment I'm also
+                                    fighting a stubborn gearbox, which has taught me more about patience
+                                    than any debugging session.
+                                </p>
+                            </div>
+                        </article>
+
+                        <article class="life-card reveal">
+                            <img
+                                src="assets/opt/flute-1280.jpg"
+                                srcset="
+                                    assets/opt/flute-960.webp  960w,
+                                    assets/opt/flute-1280.webp 1280w,
+                                    assets/opt/flute-1920.webp 1920w
+                                "
+                                sizes="(max-width: 720px) 100vw, 33vw"
+                                alt="Learning to play the flute"
+                                width="1280"
+                                height="853"
+                                loading="lazy"
+                                decoding="async"
+                            />
+                            <div class="life-body">
+                                <span class="life-badge">🎵 Beginner, honestly</span>
+                                <h3>The flute</h3>
+                                <p>
+                                    Picked up deliberately to be a beginner again. I approach it the same
+                                    way I approach a new codebase — learn the pieces, then the whole.
+                                    Still humbling.
+                                </p>
+                            </div>
+                        </article>
                     </div>
+
+                    <ul class="fact-row reveal">
+                        <li>
+                            <span class="fact-ico" aria-hidden="true">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M12 21s7-5.686 7-11a7 7 0 1 0-14 0c0 5.314 7 11 7 11Z" />
+                                    <circle cx="12" cy="10" r="2.5" />
+                                </svg>
+                            </span>
+                            <span>Google Maps Local Guide · <strong>Level&nbsp;7</strong></span>
+                        </li>
+                        <li>
+                            <span class="fact-ico" aria-hidden="true">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round">
+                                    <rect x="3" y="4" width="18" height="12" rx="2" />
+                                    <path d="M8 20h8M12 16v4" />
+                                    <path d="M7.5 10.5 10 8l2.2 2.6L14.5 8l2 2" />
+                                </svg>
+                            </span>
+                            <span>Distro-hopper: macOS + Windows + Fedora + whatever's this quarter</span>
+                        </li>
+                        <li>
+                            <span class="fact-ico" aria-hidden="true">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M13 2 4.5 13.5H11l-1 8.5 8.5-11.5H12l1-8.5Z" />
+                                </svg>
+                            </span>
+                            <span>Rewiring my own home, hiding every cable</span>
+                        </li>
+                        <li>
+                            <span class="fact-ico" aria-hidden="true">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round">
+                                    <rect x="7" y="7" width="10" height="10" rx="2.5" />
+                                    <path d="M10 3v4M14 3v4M10 17v4M14 17v4M3 10h4M3 14h4M17 10h4M17 14h4" />
+                                </svg>
+                            </span>
+                            <span>Happier training a 300M model than calling a 300B one</span>
+                        </li>
+                    </ul>
                 </div>
             </section>
 
-            <!-- SLIDE 5: FLUTE -->
-            <section id="flute" class="panel image-panel right-aligned">
-                <div class="bg-image-container">
-                    <img
-                        src="assets/flute.JPG"
-                        alt="Flute Performance"
-                        class="bg-image parallax"
-                    />
-                    <div class="overlay gradient-overlay"></div>
-                </div>
-                <div class="content-wrapper">
-                    <div class="text-block floating">
-                        <span class="mono-label">05 / Sonic</span>
-                        <h2 style="background: linear-gradient(90deg, var(--accent-2), var(--accent-3)); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;">Learning<br />the Flute</h2>
-                        <p>
-                            I picked up the flute because I wanted to understand music the way I
-                            understand code — from the fundamentals up. Still figuring it out.
-                            Breath into frequency, imperfect and beautiful.
-                        </p>
-                        <span class="badge badge-purple">🎵 Music</span>
+            <!-- ============ CONTACT ============ -->
+            <section class="contact" id="contact">
+                <div class="contact-glow" aria-hidden="true"></div>
+                <div class="wrap contact-inner reveal">
+                    <p class="kicker">05 — Next</p>
+                    <h2>If you're building something with AI in it, I'd like to hear about it.</h2>
+                    <p class="sub">
+                        I'm open to applied AI and platform engineering roles, and I take on freelance
+                        builds end to end. Recruiters: my GitHub is the real CV.
+                    </p>
+                    <div class="cta-row center">
+                        <a
+                            class="btn btn-primary lg"
+                            href="https://www.linkedin.com/in/srimadhava-khandavilli/"
+                            target="_blank"
+                            rel="noopener"
+                        >
+                            <svg class="ico brand" viewBox="0 0 16 16" aria-hidden="true"
+                                ><path
+                                    d="M3.6 1.6a2 2 0 1 1-4 0 2 2 0 0 1 4 0ZM0 5h3.2v10H0V5Zm5.2 0h3.06v1.37h.05c.43-.78 1.47-1.6 3.03-1.6 3.24 0 3.84 2.05 3.84 4.72V15H12v-4.9c0-1.17-.02-2.67-1.65-2.67-1.65 0-1.9 1.27-1.9 2.58V15H5.2V5Z"
+                            /></svg>
+                            Message me on LinkedIn
+                        </a>
+                        <a
+                            class="btn btn-outline lg"
+                            href="https://github.com/sk5268"
+                            target="_blank"
+                            rel="noopener"
+                        >
+                            <svg class="ico brand" viewBox="0 0 16 16" aria-hidden="true"
+                                ><path
+                                    d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82a7.4 7.4 0 0 1 2-.27c.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8Z"
+                            /></svg>
+                            github.com/sk5268
+                        </a>
                     </div>
+                    <p class="loc">Hyderabad, India · IST · open to remote</p>
                 </div>
             </section>
-
-            <!-- SLIDE 6: KARATE -->
-            <section id="karate" class="panel image-panel left-aligned">
-                <div class="bg-image-container">
-                    <img
-                        src="assets/karate.jpg"
-                        alt="Okinawa Goju Ryu Karate"
-                        class="bg-image parallax"
-                    />
-                    <div class="overlay dark-overlay"></div>
-                </div>
-                <div class="content-wrapper">
-                    <div class="text-block floating">
-                        <span class="mono-label">06 / Ryu</span>
-                        <h2 style="background: linear-gradient(90deg, #ff4040, var(--accent)); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;">Hard &amp;<br />Soft</h2>
-                        <p>
-                            I hold a 2nd Dan Black Belt in <strong style="color: white;">Okinawa Goju Ryu</strong> Karate under TOGKF.
-                            Karate taught me the same thing good engineering does —
-                            power means nothing without precision and control.
-                        </p>
-                        <div style="display: flex; gap: 0.75rem; flex-wrap: wrap; margin-top: 1.25rem;">
-                            <span class="badge" style="background: rgba(255,64,64,0.15); color: #ff6060; border: 1px solid rgba(255,64,64,0.3);">🥋 2nd Dan Black Belt</span>
-                            <span class="badge" style="background: rgba(255,107,53,0.15); color: var(--accent); border: 1px solid rgba(255,107,53,0.3);">TOGKF</span>
-                        </div>
-                    </div>
-                </div>
-            </section>
-
         </main>
 
-        <script src="script.js"></script>
+        <footer class="site-foot">
+            <div class="wrap foot-inner">
+                <p>© <span id="year">2026</span> Srimadhava Khandavilli · built by hand, no template.</p>
+                <nav aria-label="Elsewhere">
+                    <a href="https://github.com/sk5268" target="_blank" rel="noopener">GitHub</a>
+                    <a href="https://www.linkedin.com/in/srimadhava-khandavilli/" target="_blank" rel="noopener">LinkedIn</a>
+                    <a href="#top">Back to top</a>
+                </nav>
+            </div>
+        </footer>
+
+        <script src="script.js" defer></script>
     </body>
 </html>

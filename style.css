@@ -964,28 +964,6 @@ body::after {
 .stack-list span { font-family: var(--font-mono); font-size: 0.7rem; letter-spacing: 0.05em; text-transform: uppercase; color: var(--text-dim); }
 .stack-list em { font-style: normal; color: var(--text-soft); }
 
-.tick-list li {
-    position: relative;
-    padding-left: 1.5rem;
-    margin-bottom: 0.75rem;
-    font-size: 0.88rem;
-    color: var(--text-soft);
-    line-height: 1.55;
-}
-.tick-list li:last-child { margin-bottom: 0; }
-.tick-list li::before {
-    content: "";
-    position: absolute;
-    left: 0;
-    top: 0.45em;
-    width: 12px;
-    height: 7px;
-    border-left: 2px solid var(--green);
-    border-bottom: 2px solid var(--green);
-    transform: rotate(-45deg);
-    border-radius: 1px;
-}
-
 /* ==========================================================================
    LIFE CARDS
    ========================================================================== */
@@ -1182,6 +1160,50 @@ body::after {
     .agy-phone { width: 58px; padding: 0.85rem 0.4rem 0.55rem; }
     .agy-line { height: 4px; margin-bottom: 4px; }
 }
+
+/* --- wearSC: Wear OS tile mock --- */
+.media-inner.wearsc { background: radial-gradient(circle at 50% 45%, rgba(139, 124, 255, 0.16), transparent 66%), #0b0b13; }
+
+.watch {
+    position: relative;
+    z-index: 2;
+    display: grid;
+    place-items: center;
+    width: 62%;
+    max-width: 190px;
+    aspect-ratio: 1;
+    border-radius: 50%;
+    background: #05050a;
+    box-shadow: inset 0 0 0 1.5px rgba(255, 255, 255, 0.12), inset 0 0 40px rgba(0, 0, 0, 0.9);
+}
+
+.watch-tile {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 7px;
+    width: 76%;
+}
+.mode {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1px;
+    padding: 0.5rem 0.25rem;
+    border-radius: 9px;
+    background: rgba(255, 255, 255, 0.11);
+    color: rgba(255, 255, 255, 0.82);
+    font-family: var(--font-mono);
+}
+.mode span { font-size: 0.6rem; font-weight: 500; letter-spacing: 0.01em; }
+.mode em { font-style: normal; font-size: 0.48rem; letter-spacing: 0.08em; opacity: 0.62; }
+
+.mode.is-on {
+    background: linear-gradient(160deg, #9fe0a8, #7ccd8a);
+    color: #0b1f10;
+    box-shadow: 0 0 0 1px rgba(159, 224, 168, 0.5), 0 0 18px -2px rgba(124, 205, 138, 0.55);
+}
+.mode.is-on em { opacity: 0.75; }
 
 /* ==========================================================================
    REVEAL ANIMATION

@@ -38,12 +38,14 @@ who actually reads.
    - **Sanbo Dojo** — dojo management app on Google Play, 150+ monthly active members
    - **HNSW** — interactive 3D vector-index lab, built because no good one existed
    - **Image-To-Calendar** — timetable photo → calendar events, from college
+   - **wearsc** — Wear OS Modes replacement for watches paired to a non-Samsung phone
 
-   Followed by a **small-friction strip** (wearsc, Send2TV, gtasks-win): deliberately
-   minor tools that show the threshold for building something is low. The point isn't
-   that they're impressive, it's that the friction was real and nobody had removed it.
-4. **Freelance** — how an end-to-end engagement runs, with an agent-orchestration and
-   AWS keyword card.
+   Followed by a **small-friction strip** (Send2TV, gtasks-win): deliberately minor
+   tools that show the threshold for building something is low. The point isn't that
+   they're impressive, it's that the friction was real and nobody had removed it.
+4. **Freelance** — how an end-to-end engagement runs, with agent-orchestration and
+   AWS keyword cards. No process promises: just the stack, and the practical details
+   (location, overlap, engagement shape).
 5. **Beyond the terminal** — karate, the bike, the flute, and the odd facts.
 6. **Contact** — LinkedIn and GitHub. There is intentionally no public email address.
 

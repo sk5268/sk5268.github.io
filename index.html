@@ -687,35 +687,74 @@
                                 ></a>
                             </div>
                         </article>
+
+                        <!-- 6 -->
+                        <article class="feature reverse reveal">
+                            <div class="feature-media">
+                                <div class="media-inner wearsc">
+                                    <div class="watch" aria-hidden="true">
+                                        <div class="watch-tile">
+                                            <div class="mode is-on"><span>Home</span><em>ON</em></div>
+                                            <div class="mode"><span>Office</span><em>OFF</em></div>
+                                            <div class="mode"><span>Run</span><em>OFF</em></div>
+                                            <div class="mode"><span>Ride</span><em>OFF</em></div>
+                                        </div>
+                                    </div>
+                                    <p class="media-cap">one tile · four modes · no phone in the loop</p>
+                                </div>
+                            </div>
+                            <div class="feature-body">
+                                <div class="feature-meta">
+                                    <span class="tag tag-tools">Wear OS</span>
+                                    <span class="meta-dot">Kotlin</span>
+                                    <span class="stars" title="3 GitHub stars">★ 3</span>
+                                </div>
+                                <h3>wearsc — broke Samsung's ecosystem lock</h3>
+                                <p>
+                                    <strong>Galaxy Watch Modes &amp; Routines require a Samsung phone.</strong>
+                                    Pair the watch with anything else and that automation simply isn't
+                                    there. No error, no fallback — the feature just doesn't exist for you.
+                                </p>
+                                <p>
+                                    So I wrote the replacement: named modes you define on the watch,
+                                    switched from a single Quick Tile — gestures, radios, ringer, even a
+                                    time-based brightness schedule. <strong>No Samsung phone required.</strong>
+                                </p>
+                                <p>
+                                    Getting there meant fighting the platform. Samsung's Wi-Fi mediator
+                                    silently rewrites the setting back, and the one command that does
+                                    work only runs as <code>shell</code> (uid 2000), which an installed
+                                    app can never be. The repo documents exactly where the wall is and
+                                    why — including the <code>targetSdk</code> trade-offs that came out of it.
+                                </p>
+                                <ul class="chips chips-sm">
+                                    <li>Wear OS Tiles</li>
+                                    <li>System permissions</li>
+                                    <li>Sideloaded</li>
+                                    <li>No vendor lock-in</li>
+                                </ul>
+                                <div class="feature-actions">
+                                    <a
+                                        class="feature-link"
+                                        href="https://github.com/sk5268/wearsc"
+                                        target="_blank"
+                                        rel="noopener"
+                                        >View repo
+                                        <svg viewBox="0 0 16 16" aria-hidden="true">
+                                            <path d="M4 12 12 4M6 4h6v6" /></svg
+                                    ></a>
+                                </div>
+                            </div>
+                        </article>
                     </div>
 
                     <div class="small-friction reveal">
-                        <h3 class="friction-title">And the small stuff, because it still counts</h3>
+                        <h3 class="friction-title">More small stuff, because it still counts</h3>
                         <p class="friction-sub">
                             None of these are big. All of them existed because something annoyed me
                             <em>repeatedly</em> — which is the only reason a tool earns the right to exist.
                         </p>
                         <ul class="friction-grid">
-                            <li>
-                                <div class="friction-head">
-                                    <h4>wearsc</h4>
-                                    <span class="lang"><i style="--c: #A97BFF"></i>Kotlin · WearOS</span>
-                                </div>
-                                <p>
-                                    A WearOS tile for the settings I actually toggle. The stock path is a
-                                    swipe, a menu, and three taps — to change one boolean, on a screen
-                                    smaller than a matchbox. Now it's one tap on the wrist.
-                                </p>
-                                <a
-                                    class="friction-link"
-                                    href="https://github.com/sk5268/wearsc"
-                                    target="_blank"
-                                    rel="noopener"
-                                    >View repo
-                                    <svg viewBox="0 0 16 16" aria-hidden="true">
-                                        <path d="M4 12 12 4M6 4h6v6" /></svg
-                                ></a>
-                            </li>
                             <li>
                                 <div class="friction-head">
                                     <h4>Send2TV</h4>
@@ -870,13 +909,14 @@
                                 </ul>
                             </div>
 
-                            <div class="side-card side-note">
-                                <h3 class="side-title">How I work</h3>
-                                <ul class="tick-list">
-                                    <li>Small, reviewable increments — you see it working weekly.</li>
-                                    <li>Documented and handed over. No black boxes, no hostage code.</li>
-                                    <li>Cost-aware by instinct: I'd rather optimise a model and a prompt than rent more GPUs.</li>
-                                    <li>Timezone-friendly from India (IST) for EU, UK, and US mornings.</li>
+                            <div class="side-card">
+                                <h3 class="side-title">Taking something on</h3>
+                                <ul class="stack-list">
+                                    <li><span>Based</span><em>Hyderabad, India · IST</em></li>
+                                    <li><span>Overlap</span><em>EU, UK, and US mornings</em></li>
+                                    <li><span>Engagements</span><em>Fixed scope or monthly retainer</em></li>
+                                    <li><span>Starts with</span><em>A call, then a written scope</em></li>
+                                    <li><span>Handover</span><em>Repo, docs, and a walkthrough</em></li>
                                 </ul>
                             </div>
                         </aside>

@@ -25,12 +25,12 @@ favicon and the iOS home-screen icon.
 Built to work for two audiences at once — someone skimming for 30 seconds, and someone
 who actually reads.
 
-1. **Hero** — one sentence on what I do, with the code card and the Google Maps Local
-   Guide Level 7 detail.
-2. **Focus** — the three things I actually work on: applied AI / Tiny Language Models,
-   multi-agent systems, and end-to-end platforms, closing with the through-line
-   principle: *only what's actually needed*, smaller-beats-bigger, nothing added
-   "just in case".
+1. **Hero** — leads with the day job (agentic / applied AI engineering), with a code
+   card showing an agent loop.
+2. **Focus** — the three things I actually work on: agentic AI and LLM systems (the day
+   job), tools and automation, and end-to-end platforms. Tiny Language Models appear as
+   the off-the-clock practice, not the headline. Closes with the through-line principle:
+   *only what's actually needed*.
 3. **Selected work** — five shipped things, each told as *why it had to exist* rather
    than a repo description, ordered by usefulness:
    - **AGY Remote** — unofficial Antigravity CLI client; laptop as server, phone as client

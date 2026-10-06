@@ -1011,6 +1011,44 @@ body::after {
 }
 .life-card:hover img { transform: scale(1.04); filter: saturate(1.12) contrast(1.05) brightness(0.95); }
 
+/* text-only card: same top slot as the photo cards, but with the mark
+   centred in it rather than a badge floating in dead space */
+.life-card-text { position: relative; }
+.life-card-text::before {
+    content: "";
+    display: block;
+    width: 100%;
+    aspect-ratio: 16 / 10;
+    background:
+        radial-gradient(circle at 50% 50%, rgba(255, 138, 76, 0.2), transparent 62%),
+        linear-gradient(165deg, rgba(255, 255, 255, 0.045), rgba(255, 255, 255, 0.008));
+    border-bottom: 1px solid var(--line);
+}
+.life-card-text .life-body { padding-top: 1.2rem; }
+
+.life-mark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    aspect-ratio: 16 / 10;
+    display: grid;
+    place-content: center;
+    justify-items: center;
+    gap: 0.5rem;
+    color: var(--accent);
+    pointer-events: none;
+}
+.life-mark svg { width: 34px; height: 34px; }
+.life-mark em {
+    font-style: normal;
+    font-family: var(--font-mono);
+    font-size: 0.68rem;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: var(--text-dim);
+}
+
 .life-body { padding: 1.2rem 1.3rem 1.4rem; display: flex; flex-direction: column; gap: 0.6rem; }
 .life-badge {
     align-self: flex-start;

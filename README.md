@@ -23,7 +23,9 @@ who actually reads.
 1. **Hero** — one sentence on what I do, with the code card and the Google Maps Local
    Guide Level 7 detail.
 2. **Focus** — the three things I actually work on: applied AI / Tiny Language Models,
-   multi-agent systems, and end-to-end platforms.
+   multi-agent systems, and end-to-end platforms, closing with the through-line
+   principle: *only what's actually needed*, smaller-beats-bigger, nothing added
+   "just in case".
 3. **Selected work** — five shipped things, each told as *why it had to exist* rather
    than a repo description, ordered by usefulness:
    - **AGY Remote** — unofficial Antigravity CLI client; laptop as server, phone as client
@@ -31,6 +33,10 @@ who actually reads.
    - **Sanbo Dojo** — dojo management app on Google Play, 150+ monthly active members
    - **HNSW** — interactive 3D vector-index lab, built because no good one existed
    - **Image-To-Calendar** — timetable photo → calendar events, from college
+
+   Followed by a **small-friction strip** (wearsc, Send2TV, gtasks-win): deliberately
+   minor tools that show the threshold for building something is low. The point isn't
+   that they're impressive, it's that the friction was real and nobody had removed it.
 4. **Freelance** — how an end-to-end engagement runs, with an agent-orchestration and
    AWS keyword card.
 5. **Beyond the terminal** — karate, the bike, the flute, and the odd facts.
@@ -88,6 +94,8 @@ there is no build step to run.
 - **Features** — each entry is an `<article class="feature">`; add `reverse` to flip the
   media to the right. The media is hand-built CSS mockups (`.agy-mock`, `.dojo-mock`,
   `.ext-window`, `.graph`, `.cal-grid`) — no screenshots to keep in sync.
+- **Small-friction cards** — plain `<li>` entries in `.friction-grid`; three across on
+  desktop, stacked under 1024px.
 - **Stats** — numbers in `.stat-bar` animate from `data-count`, with an optional
   `data-suffix` (for example `data-count="1200" data-suffix="+"`).
 - **Sections** — anything with `class="reveal"` fades in on scroll.

@@ -579,6 +579,123 @@ body::after {
 .chips-sm li { font-size: 0.66rem; }
 
 /* ==========================================================================
+   PRINCIPLE BAND (inside Focus)
+   ========================================================================== */
+
+.principle {
+    margin-top: clamp(2rem, 5vh, 3rem);
+    padding: clamp(1.5rem, 3vw, 2.25rem);
+    border: 1px solid var(--line);
+    border-radius: var(--radius);
+    background: linear-gradient(150deg, rgba(255, 138, 76, 0.07), rgba(139, 124, 255, 0.05) 55%, transparent);
+}
+
+.principle-lead {
+    font-family: var(--font-head);
+    font-size: clamp(1.05rem, 2vw, 1.4rem);
+    line-height: 1.35;
+    letter-spacing: -0.02em;
+    color: var(--text-dim);
+    margin-bottom: 1.75rem;
+    max-width: 34em;
+}
+.principle-lead strong {
+    color: var(--text);
+    font-weight: 600;
+    background: var(--grad);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.principle-list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: clamp(1.25rem, 3vw, 2.25rem);
+}
+.principle-list li { border-top: 1px solid var(--line); padding-top: 1rem; }
+.principle-list h3 {
+    font-family: var(--font-head);
+    font-size: 0.98rem;
+    font-weight: 600;
+    letter-spacing: -0.01em;
+    margin-bottom: 0.5rem;
+    color: var(--text);
+}
+.principle-list p { font-size: 0.88rem; color: var(--text-dim); line-height: 1.6; }
+
+/* ==========================================================================
+   SMALL FRICTION STRIP (end of Selected work)
+   ========================================================================== */
+
+.small-friction { margin-top: clamp(2.5rem, 6vh, 3.5rem); }
+
+.friction-title {
+    font-family: var(--font-head);
+    font-size: clamp(1.15rem, 2.2vw, 1.6rem);
+    font-weight: 600;
+    letter-spacing: -0.02em;
+    margin-bottom: 0.6rem;
+}
+.friction-sub {
+    font-size: 0.95rem;
+    color: var(--text-dim);
+    max-width: 46em;
+    margin-bottom: 1.5rem;
+}
+.friction-sub em { color: var(--text-soft); font-style: italic; }
+
+.friction-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+}
+.friction-grid > li {
+    display: flex;
+    flex-direction: column;
+    gap: 0.6rem;
+    padding: 1.2rem 1.25rem 1.15rem;
+    border: 1px solid var(--line);
+    border-radius: var(--radius-sm);
+    background: linear-gradient(165deg, rgba(255, 255, 255, 0.03), rgba(255, 255, 255, 0.006));
+    transition: transform 0.3s var(--ease), border-color 0.3s ease, background 0.3s ease;
+}
+.friction-grid > li:hover {
+    transform: translateY(-4px);
+    border-color: rgba(255, 138, 76, 0.4);
+    background: linear-gradient(165deg, rgba(255, 138, 76, 0.06), rgba(255, 255, 255, 0.01));
+}
+
+.friction-head {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: baseline;
+    justify-content: space-between;
+    gap: 0.5rem;
+}
+.friction-head h4 {
+    font-family: var(--font-mono);
+    font-size: 0.9rem;
+    font-weight: 700;
+    letter-spacing: -0.01em;
+}
+.friction-grid .lang { margin-top: 0; }
+.friction-grid > li > p { font-size: 0.86rem; color: var(--text-dim); line-height: 1.6; flex: 1; }
+
+.friction-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.35rem;
+    align-self: flex-start;
+    font-size: 0.82rem;
+    font-weight: 600;
+    color: var(--accent);
+    transition: gap 0.25s var(--ease), color 0.2s ease;
+}
+.friction-link svg { width: 13px; height: 13px; fill: none; stroke: currentColor; stroke-width: 1.9; stroke-linecap: round; stroke-linejoin: round; }
+.friction-link:hover { gap: 0.55rem; color: #ffa873; }
+
+/* ==========================================================================
    FEATURED WORK
    ========================================================================== */
 
@@ -1043,6 +1160,8 @@ body::after {
    ========================================================================== */
 
 @media (max-width: 1024px) {
+    .principle-list { grid-template-columns: 1fr; gap: 1rem; }
+    .friction-grid { grid-template-columns: 1fr; }
     .hero-wrap { grid-template-columns: 1fr; }
     .hero-visual { max-width: 620px; }
     .pillars { grid-template-columns: 1fr; }

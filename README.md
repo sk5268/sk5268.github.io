@@ -11,9 +11,14 @@ done. That is deliberate — a portfolio shouldn't need a toolchain to stay aliv
 index.html          the whole page (semantic HTML + JSON-LD Person schema)
 style.css           all styling — design tokens at the top, one file
 script.js           ~180 lines of progressive enhancement
-assets/opt/         optimised, responsive images actually served to visitors
-assets/src/         original full-resolution photos (not referenced by the page)
+assets/opt/         optimised images actually served — photos + the brand mark
+assets/src/         originals (not referenced by the page)
 ```
+
+The nav brand mark is an illustration, not a screenshot: served as
+`assets/opt/mark-{96,144}` with a WebP `srcset` so the 1.35 KB variant is
+used where supported (the PNG fallback is 15 KB). It doubles as the
+favicon and the iOS home-screen icon.
 
 ## What's on the page
 

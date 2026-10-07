@@ -557,7 +557,23 @@ body::after {
 
 .pillar-top { display: flex; align-items: center; justify-content: space-between; margin-bottom: 1.1rem; }
 .pillar-idx { font-family: var(--font-mono); font-size: 0.72rem; color: var(--text-dim); letter-spacing: 0.1em; }
-.pillar-emoji { font-size: 1.6rem; line-height: 1; }
+.pillar-emoji {
+    display: grid;
+    place-items: center;
+    width: 38px;
+    height: 38px;
+    border-radius: 10px;
+    border: 1px solid var(--line);
+    background: rgba(255, 255, 255, 0.035);
+    color: var(--accent);
+    transition: color 0.3s ease, border-color 0.3s ease, background 0.3s ease;
+}
+.pillar-emoji svg { width: 19px; height: 19px; }
+.pillar:hover .pillar-emoji {
+    color: #ffb98a;
+    border-color: rgba(255, 138, 76, 0.4);
+    background: rgba(255, 138, 76, 0.1);
+}
 
 .pillar h3 {
     font-family: var(--font-head);
@@ -1030,6 +1046,8 @@ body::after {
 
 .life-body { padding: 1.2rem 1.3rem 1.4rem; display: flex; flex-direction: column; gap: 0.6rem; }
 .life-badge {
+    display: inline-flex;
+    align-items: center;
     align-self: flex-start;
     font-family: var(--font-mono);
     font-size: 0.66rem;
@@ -1044,6 +1062,14 @@ body::after {
 .life-body h3 { font-family: var(--font-head); font-size: 1.1rem; font-weight: 600; letter-spacing: -0.02em; }
 .life-body p { font-size: 0.88rem; color: var(--text-dim); }
 .life-body p strong { color: var(--text-soft); font-weight: 600; }
+
+.badge-ico {
+    width: 13px;
+    height: 13px;
+    flex-shrink: 0;
+    margin-right: 0.4rem;
+    vertical-align: -2px;
+}
 .life-body p + p { margin-top: 0.6rem; }
 
 .fact-row {

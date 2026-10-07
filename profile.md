@@ -4,7 +4,7 @@
 
 I'm an **AI enthusiast** who **lives and breathes language models**.  
 Very much into **training Tiny Language Models (TLMs) from scratch**, experimenting with agents, local/offline setups, and building fun, practical tools.<br>
-Whether it's fine-tuning models for smarter function calling, creating browser extensions that supercharge AI experiences, or hacking together productivity automations — if it involves tinkering with LLMs, I'm in.
+Whether it's fine-tuning models for smarter function calling, creating browser extensions that supercharge AI experiences, or hacking together productivity automations, if it involves tinkering with LLMs, I'm in.
 
 ### Fun Facts
 - I use **Grok** more than Gemini, ChatGPT, or Claude 😄

@@ -1,17 +1,17 @@
 # sk5268.github.io
 
-Source for my personal portfolio — **[sk5268.github.io](https://sk5268.github.io/)**.
+Source for my personal portfolio, **[sk5268.github.io](https://sk5268.github.io/)**.
 
 A single hand-written page: no framework, no build step, no bundler. Edit the HTML, refresh,
-done. That is deliberate — a portfolio shouldn't need a toolchain to stay alive.
+done. That is deliberate: a portfolio shouldn't need a toolchain to stay alive.
 
 ## Contents
 
 ```
 index.html          the whole page (semantic HTML + JSON-LD Person schema)
-style.css           all styling — design tokens at the top, one file
+style.css           all styling; design tokens at the top, one file
 script.js           ~180 lines of progressive enhancement
-assets/opt/         optimised images actually served — photos + the brand mark
+assets/opt/         optimised images actually served (photos + the brand mark)
 assets/src/         originals (not referenced by the page)
 ```
 
@@ -22,45 +22,45 @@ favicon and the iOS home-screen icon.
 
 ## What's on the page
 
-Built to work for two audiences at once — someone skimming for 30 seconds, and someone
+Built to work for two audiences at once: someone skimming for 30 seconds, and someone
 who actually reads.
 
-1. **Hero** — leads with the day job (agentic / applied AI engineering), with a code
+1. **Hero**: leads with the day job (agentic / applied AI engineering), with a code
    card showing an agent loop.
-2. **Focus** — the three things I actually work on: agentic AI and LLM systems (the day
+2. **Focus**: the three things I actually work on: agentic AI and LLM systems (the day
    job), tools and automation, and end-to-end platforms. Tiny Language Models appear as
    the off-the-clock practice, not the headline. Closes with the through-line principle:
    *only what's actually needed*.
-3. **Selected work** — five shipped things, each told as *why it had to exist* rather
+3. **Selected work**: five shipped things, each told as *why it had to exist* rather
    than a repo description, ordered by usefulness:
-   - **AGY Remote** — unofficial Antigravity CLI client; laptop as server, phone as client
-   - **The extensions** — AI_TOC / Gemini_Xtension / Ipynb2Py_VSCode, 1,600+ installs
-   - **Sanbo Dojo** — dojo management app on Google Play, 150+ monthly active members
-   - **HNSW** — interactive 3D vector-index lab, built because no good one existed
-   - **Image-To-Calendar** — timetable photo → calendar events, from college
-   - **wearsc** — Wear OS Modes replacement for watches paired to a non-Samsung phone
+   - **AGY Remote**: unofficial Antigravity CLI client; laptop as server, phone as client
+   - **The extensions**: AI_TOC / Gemini_Xtension / Ipynb2Py_VSCode, 1,600+ installs
+   - **Sanbo Dojo**: dojo management app on Google Play, 150+ monthly active members
+   - **HNSW**: interactive 3D vector-index lab, built because no good one existed
+   - **Image-To-Calendar**: timetable photo → calendar events, from college
+   - **wearsc**: Wear OS Modes replacement for watches paired to a non-Samsung phone
 
    Followed by a **small-friction strip** (Send2TV, gtasks-win): deliberately minor
    tools that show the threshold for building something is low. The point isn't that
    they're impressive, it's that the friction was real and nobody had removed it.
-4. **Freelance** — how an end-to-end engagement runs, with agent-orchestration and
+4. **Freelance**: how an end-to-end engagement runs, with agent-orchestration and
    AWS keyword cards. No process promises: just the stack, and the practical details
    (location, overlap, engagement shape).
-5. **Beyond the terminal** — karate, the bike, the flute, and the odd facts.
-6. **Contact** — LinkedIn and GitHub. There is intentionally no public email address.
+5. **Beyond the terminal**: karate, the bike, the flute, and the odd facts.
+6. **Contact**: LinkedIn and GitHub. There is intentionally no public email address.
 
 ## Design notes
 
-- **Palette** — near-black `#07070b` with an orange → violet → cyan gradient accent.
-- **Type** — Space Grotesk (headings), Inter (body), JetBrains Mono (labels and code).
-- **Motion** — scroll reveals, animated counters, and a progress rail, all disabled under
+- **Palette**: near-black `#07070b` with an orange → violet → cyan gradient accent.
+- **Type**: Space Grotesk (headings), Inter (body), JetBrains Mono (labels and code).
+- **Motion**: scroll reveals, animated counters, and a progress rail, all disabled under
   `prefers-reduced-motion: reduce`.
-- **Accessibility** — skip link, visible focus rings, `aria-pressed` on filters,
+- **Accessibility**: skip link, visible focus rings, `aria-pressed` on filters,
   `aria-expanded` on the menu, labelled landmarks, and readable contrast throughout.
 
 ## Images
 
-The source photographs are 4000–5700px wide and 2–6 MB each. All are pre-optimised into
+The source photographs are 4000 to 5700px wide and 2 to 6 MB each. All are pre-optimised into
 `assets/opt/` and served as WebP with a JPEG fallback via `srcset`.
 
 To regenerate after adding a photo:
@@ -76,7 +76,7 @@ magick assets/src/hero.jpeg -auto-orient -resize  960x -strip -quality 76 assets
 
 Then reference them from `index.html` with a `srcset`/`sizes` pair as the existing cards do.
 
-`assets/src/` is not linked from the page, so visitors never download it — it exists only
+`assets/src/` is not linked from the page, so visitors never download it. It exists only
 so the originals aren't lost. It can be deleted from the repo if size matters more.
 
 ## Local preview
@@ -90,7 +90,7 @@ Opening `index.html` directly from the filesystem also works.
 
 ## Deployment
 
-GitHub Pages serves this repository's `main` branch root automatically. Commit and push —
+GitHub Pages serves this repository's `main` branch root automatically. Commit and push;
 there is no build step to run.
 
 > Note: `https://sk5268.github.io/hnsw/` is a **separate repository** and is untouched by
@@ -98,12 +98,12 @@ there is no build step to run.
 
 ## Editing content
 
-- **Features** — each entry is an `<article class="feature">`; add `reverse` to flip the
+- **Features**: each entry is an `<article class="feature">`; add `reverse` to flip the
   media to the right. The media is hand-built CSS mockups (`.agy-mock`, `.dojo-mock`,
-  `.ext-window`, `.graph`, `.cal-grid`) — no screenshots to keep in sync.
-- **Small-friction cards** — plain `<li>` entries in `.friction-grid`; three across on
+  `.ext-window`, `.graph`, `.cal-grid`), so there are no screenshots to keep in sync.
+- **Small-friction cards**: plain `<li>` entries in `.friction-grid`; three across on
   desktop, stacked under 1024px.
-- **Stats** — numbers in `.stat-bar` animate from `data-count`, with an optional
+- **Stats**: numbers in `.stat-bar` animate from `data-count`, with an optional
   `data-suffix` (for example `data-count="1200" data-suffix="+"`).
-- **Sections** — anything with `class="reveal"` fades in on scroll.
-- **Links** — every outbound link carries `target="_blank" rel="noopener"`.
+- **Sections**: anything with `class="reveal"` fades in on scroll.
+- **Links**: every outbound link carries `target="_blank" rel="noopener"`.

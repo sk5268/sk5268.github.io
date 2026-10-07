@@ -1,5 +1,5 @@
 /* ==========================================================================
-   Srimadhava Khandavilli — portfolio
+   Srimadhava Khandavilli portfolio
    Hand-written CSS. No framework, no build step.
    ========================================================================== */
 
@@ -1307,7 +1307,7 @@ body::after {
 
 
 /* ==========================================================================
-   FREELANCE — skill keyword cards
+   FREELANCE: skill keyword cards
    ========================================================================== */
 
 .side-card-accent {
@@ -1336,7 +1336,7 @@ body::after {
 .key-list li:hover { color: var(--accent); border-color: rgba(255, 138, 76, 0.45); }
 
 /* ==========================================================================
-   MEDIA MOCKUPS — AGY Remote, Sanbo Dojo
+   MEDIA MOCKUPS: AGY Remote, Sanbo Dojo
    ========================================================================== */
 
 .media-inner.agy { background: radial-gradient(circle at 30% 30%, rgba(139, 124, 255, 0.18), transparent 62%), #0b0b13; }

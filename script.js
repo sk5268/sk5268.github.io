@@ -1,5 +1,5 @@
 /* ==========================================================================
-   Srimadhava Khandavilli — portfolio interactions
+   Srimadhava Khandavilli portfolio interactions
    Small, dependency-free, progressive: everything degrades to readable HTML.
    ========================================================================== */
 
